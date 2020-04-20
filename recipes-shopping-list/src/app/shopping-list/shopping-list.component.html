@@ -1,0 +1,15 @@
+<div class="row d-flex justify-content-center align-items-center">
+  <div class="col-12 col-lg-10">
+    <app-shopping-edit></app-shopping-edit>
+
+    <div class="card">
+      <ul class="list-group list-group-flush">
+        <li 
+          class="list-group-item" type="button"
+          *ngFor="let ingredient of ingredients"
+        >{{ ingredient.name }} ({{ ingredient.amount }})</li>
+      </ul>
+    </div>
+
+  </div>
+</div>

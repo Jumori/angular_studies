@@ -1,0 +1,10 @@
+<app-header (pathSelected)="onNavigate($event)"></app-header>
+
+<div class="container">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-12">
+      <app-recipes *ngIf="loadedPath === 'recipes'"></app-recipes>
+      <app-shopping-list *ngIf="loadedPath === 'shopping-list'"></app-shopping-list>
+    </div>
+  </div>
+</div>
